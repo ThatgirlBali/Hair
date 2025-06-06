@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Mom's Salon | Hairstyle Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff8f0;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background: #e91e63;
+      color: white;
+      padding: 20px 10px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      padding: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 600px) {
+      .gallery img {
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Your Mom's Salon</h1>
+    <p>Explore Our Beautiful Hairstyle Gallery</p>
+  </header>
+
+  <section class="gallery">
+    <!-- Replace the image URLs below with your own images -->
+    <img src="https://via.placeholder.com/300x300?text=Style+1" alt="Style 1">
+    <img src="https://via.placeholder.com/300x300?text=Style+2" alt="Style 2">
+    <img src="https://via.placeholder.com/300x300?text=Style+3" alt="Style 3">
+    <img src="https://via.placeholder.com/300x300?text=Style+4" alt="Style 4">
+    <img src="https://via.placeholder.com/300x300?text=Style+5" alt="Style 5">
+    <img src="https://via.placeholder.com/300x300?text=Style+6" alt="Style 6">
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Your Mom's Salon. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
