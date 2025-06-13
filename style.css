@@ -16,20 +16,23 @@ header {
   height: 60px;
   background: #e91e63;
   color: white;
-  padding: 20px 10px;
+  font-size: 16px;
+  padding: 15px 5px;
   text-align: center;
 }
 
 h1 {
   margin: 0;
+  
 }
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 15px;
   padding: 20px;
 }
+
 
 .gallery img {
   width: 100%;
@@ -55,11 +58,33 @@ footer {
 
 @media (max-width: 600px) {
   .gallery img {
-    height: 200px;
+    height: auto;
+    aspect-ratio: 3 / 4;
+  }
+
+  .nav li {
+    font-size: 14px;
+  }
+
+  .contact h3 {
+    font-size: 30px;
+  }
+
+  .contact p {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  header {
+    font-size: 14px;
   }
 }
 
+
 .nav {
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 16px;
   display: flex;
   justify-content: center;
   list-style: none;
