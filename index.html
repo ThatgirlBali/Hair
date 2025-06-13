@@ -7,6 +7,30 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 
+<button id="backToTop" title="Back to top">⬆️</button>
+
+<script>
+  // Show/hide button
+  window.onscroll = function () {
+    const btn = document.getElementById("backToTop");
+    btn.style.display = window.scrollY > 200 ? "block" : "none";
+  };
+
+  // Scroll to top
+  document.getElementById("backToTop").onclick = function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+</script>
+
+<a href="https://wa.me/27727044440?text=Hi!%20I%20would%20like%20to%20book%20a%20hairstyle!" 
+   class="whatsapp-float" 
+   target="_blank" 
+   title="Book on WhatsApp">
+  <img src="images/whatsapp-icon.png" alt="WhatsApp" />
+</a>
+
+
+
 <body>
 
   <header>
@@ -15,22 +39,118 @@
   </header>
 
   <section class="gallery">
-    <img src="images/1.jpg" alt="Style 1">
-    <img src="images/2.jpg" alt="Style 2">
-    <img src="images/3.jpg" alt="Style 3">
-    <img src="images/4.jpg" alt="Style 4">
-    <img src="images/5.jpg" alt="Style 5">
-    <img src="images/6.jpg" alt="Style 6">
-    <img src="images/7.jpg" alt="Style 7">
-    <img src="images/8.jpg" alt="Style 8">
-    <img src="images/9.jpg" alt="Style 9">
-    <img src="images/10.jpg" alt="Style 10">
-    <img src="images/11.jpg" alt="Style 11">
-    <img src="images/12.jpg" alt="Style 12">
-    <img src="#" alt="Style 9">
-    
+  <div class="style-card">
+    <a href="https://wa.me/27727044440?text=Hi!%20I'm%20interested%20in%20Style%2015.">
+      <img src="images/15.jpg" alt="Style 15" />
+    </a>
+    <p>Style 15</p>
+  </div>
 
-  </section>
+  <div class="style-card">
+    <a href="https://wa.me/27727044440?text=Hi!%20I'm%20interested%20in%20Style%2016.">
+      <img src="images/16.jpg" alt="Style 16" />
+    </a>
+    <p>Style 16</p>
+  </div>
+
+  <div class="style-card">
+    <a href="https://wa.me/27727044440?text=Hi!%20I'm%20interested%20in%20Style%2013.">
+      <img src="images/13.jpg" alt="Style 13" />
+    </a>
+    <p>Style 13</p>
+  </div>
+
+  <div class="style-card">
+    <a href="https://wa.me/27727044440?text=Hi!%20I'm%20interested%20in%20Style%2014.">
+      <img src="images/14.jpg" alt="Style 14" />
+    </a>
+    <p>Style 14</p>
+  </div>
+
+  <div class="style-card">
+    <a href="https://wa.me/27727044440?text=Hi!%20I'm%20interested%20in%20Style%201.">
+      <img src="images/1.jpg" alt="Style 1" />
+    </a>
+    <p>Style 1</p>
+  </div>
+
+  <div class="style-card">
+    <a href="https://wa.me/27727044440?text=Hi!%20I'm%20interested%20in%20Style%202.">
+      <img src="images/2.jpg" alt="Style 2" />
+    </a>
+    <p>Style 2</p>
+  </div>
+
+  <div class="style-card">
+    <a href="https://wa.me/27727044440?text=Hi!%20I'm%20interested%20in%20Style%203.">
+      <img src="images/3.jpg" alt="Style 3" />
+    </a>
+    <p>Style 3</p>
+  </div>
+
+  <div class="style-card">
+    <a href="https://wa.me/27727044440?text=Hi!%20I'm%20interested%20in%20Style%204.">
+      <img src="images/4.jpg" alt="Style 4" />
+    </a>
+    <p>Style 4</p>
+  </div>
+
+  <div class="style-card">
+    <a href="https://wa.me/27727044440?text=Hi!%20I'm%20interested%20in%20Style%205.">
+      <img src="images/5.jpg" alt="Style 5" />
+    </a>
+    <p>Style 5</p>
+  </div>
+
+  <div class="style-card">
+    <a href="https://wa.me/27727044440?text=Hi!%20I'm%20interested%20in%20Style%206.">
+      <img src="images/6.jpg" alt="Style 6" />
+    </a>
+    <p>Style 6</p>
+  </div>
+
+  <div class="style-card">
+    <a href="https://wa.me/27727044440?text=Hi!%20I'm%20interested%20in%20Style%207.">
+      <img src="images/7.jpg" alt="Style 7" />
+    </a>
+    <p>Style 7</p>
+  </div>
+
+  <div class="style-card">
+    <a href="https://wa.me/27727044440?text=Hi!%20I'm%20interested%20in%20Style%208.">
+      <img src="images/8.jpg" alt="Style 8" />
+    </a>
+    <p>Style 8</p>
+  </div>
+
+  <div class="style-card">
+    <a href="https://wa.me/27727044440?text=Hi!%20I'm%20interested%20in%20Style%209.">
+      <img src="images/9.jpg" alt="Style 9" />
+    </a>
+    <p>Style 9</p>
+  </div>
+
+  <div class="style-card">
+    <a href="https://wa.me/27727044440?text=Hi!%20I'm%20interested%20in%20Style%2010.">
+      <img src="images/10.jpg" alt="Style 10" />
+    </a>
+    <p>Style 10</p>
+  </div>
+
+  <div class="style-card">
+    <a href="https://wa.me/27727044440?text=Hi!%20I'm%20interested%20in%20Style%2011.">
+      <img src="images/11.jpg" alt="Style 11" />
+    </a>
+    <p>Style 11</p>
+  </div>
+
+  <div class="style-card">
+    <a href="https://wa.me/27727044440?text=Hi!%20I'm%20interested%20in%20Style%2012.">
+      <img src="images/12.jpg" alt="Style 12" />
+    </a>
+    <p>Style 12</p>
+  </div>
+</section>
 
 
 
